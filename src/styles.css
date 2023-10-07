@@ -1,0 +1,160 @@
+:root{
+    --blue-1: rgb(0, 115, 255);
+    --blue-2: rgb(85, 109, 135);
+    --yellow-1: yellow;
+    --grey-1: rgb(75, 82, 84);
+    --dark-shadow: rgb(0, 0, 0);
+    --light-shadow: rgb(85, 86, 86);
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(243, 243, 243);;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+.top-data{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;  /* Add this line */
+    margin-right: 40px;  /* Adjust this as needed */
+    
+    
+}
+.bottom-data{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-around;
+    
+
+}
+
+.top-data img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.weather-data{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.location{
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.temperature{
+    color: white;
+    font-size: 4em;
+    font-weight: 900;
+
+}
+
+.more-info-label{
+    color: white;
+}
+
+.more-info-container{
+    flex: 1;
+    background-color: transparent; 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.info-block{
+    width: calc(50% - 10px);
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.info-block-label{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;  
+}
+
+.info-block-label img{
+    width: 2em;
+
+}
+
+.info-block-label span{
+    color: white;
+    font-size: .8em;
+}
+
+.info-block-value{
+    color: white;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search {
+    position: fixed; 
+    top: 10px; 
+    right: 10px; 
+    z-index: 1000; 
+  }
+
+.search input{
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 1em;
+    color: rgb(34, 34, 34);
+    font-size: 0.8em;
+    text-align: center;
+}
